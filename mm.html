@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <script>
+        function userinputs(){
+            let username = document.getElementById('username').value;
+            let Age = document.getElementById('Age').value;
+            document.getElementById('username').value = '';
+            document.getElementById('Age').value = '';
+            localStorage.setItem('name',username)
+            localStorage.setItem('age',Age)
+            window.location.href = 'k.html';
+          
+          }
+ 
+
+    </script>
+    <div class="l" style="margin-top: 100px">
+    <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="ENTER YOUR NAME" autocomplete="username"><br><br>
+    <label for="Age">Age:</label>
+    <input type="number" id="Age" placeholder="ENTER YOUR AGE"><br><br>
+    <button type="button" onclick="userinputs()">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
