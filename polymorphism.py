@@ -85,3 +85,7 @@ print(obj1)
 
 print('hii')
 print('hello how are you')
+
+
+print('i am fine')
+print('what about you') 
