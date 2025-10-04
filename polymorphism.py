@@ -82,3 +82,6 @@ class sum():
     
 obj1 = sum()
 print(obj1)
+
+print('hii')
+print('hello how are you')
